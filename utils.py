@@ -9,7 +9,7 @@ from langchain_anthropic import ChatAnthropic
 from langchain_core.messages import SystemMessage, HumanMessage
 from datetime import datetime
 from elevenlabs import ElevenLabs
-import google.generativeai as genai  # ✅ Added for Gemini
+import google.generativeai as genai  
 
 load_dotenv()
 
