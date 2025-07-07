@@ -35,7 +35,7 @@ class NewsScraper:
                     query_params = {
                         "q": topic,
                         "engine": "google",
-                        "tbm": "nws",  # news tab
+                        "tbm": "nws", 
                         "api_key": self.serpapi_api_key
                     }
 
@@ -64,6 +64,6 @@ class NewsScraper:
                 except Exception as e:
                     results[topic] = f"Error: {str(e)}"
 
-                await asyncio.sleep(1)  # avoid spamming
+                await asyncio.sleep(1)  
 
         return {"news_analysis": results}
