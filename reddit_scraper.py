@@ -28,7 +28,7 @@ async def fetch_top_reddit_posts(topic: str, limit: int = 5):
             if post_time >= two_weeks_ago:
                 posts.append({
                     "title": submission.title,
-                    "selftext": submission.selftext[:500],  # trim content
+                    "selftext": submission.selftext[:500], 
                     "score": submission.score,
                     "url": submission.url
                 })
