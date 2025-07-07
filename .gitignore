@@ -1,0 +1,20 @@
+# Ignore environment files
+.env
+
+# Ignore audio outputs
+audio/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# VSCode
+.vscode/
+
+# Virtual environments
+venv/
+env/
+
+# System files
+.DS_Store
+Thumbs.db
